@@ -1,150 +1,55 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bedin Pasztetnik - Arquitetura e Interiores</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Cabeçalho -->
-    <header class="navbar">
-      <div class="logo">
-        <h2>BEDIN PASZTETNIK</h2>
-        <span>ARQUITETURA . INTERIORES</span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <!-- Seção Principal (Hero) -->
-    <section id="inicio" class="hero">
-      <div class="hero-content">
-        <span class="tag">ARQUITETURA DE INTERIORES</span>
-        <h1>Espaços que acolhem histórias.</h1>
-        <p>
-          Na Bedin Pasztetnik, criamos interiores que unem estética,
-          funcionalidade e a sua essência. Projetos personalizados para
-          transformar espaços em experiências.
-        </p>
-        <a href="#projetos" class="btn">CONHEÇA NOSSO TRABALHO &rarr;</a>
-      </div>
-      <div class="hero-image">
-        <!-- Caminho da imagem atualizado aqui -->
-        <img
-          src="hero.png"
-          alt="Fachada de casa moderna com varanda de madeira e piscina"
-        />
-      </div>
-    </section>
+<head>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="about">
-      <div class="about-image">
-        <!-- Caminho da imagem atualizado aqui -->
-        <img
-          src="sobre.jpg"
-          alt="Retrato de duas arquitetas em um ambiente iluminado"
-        />
-      </div>
-      <div class="about-content">
-        <span class="tag">SOBRE NÓS</span>
-        <h2>Duas visões, um mesmo propósito.</h2>
-        <p>
-          Somos a Bedin Pasztetnik, um escritório de arquitetura de interiores
-          que acredita no poder dos detalhes. Unimos criatividade, técnica e
-          sensibilidade para criar ambientes que refletem quem você é e como
-          você vive.
-        </p>
-        <a href="#sobre" class="btn-dark">SAIBA MAIS &rarr;</a>
-      </div>
-      <div class="about-quote">
-        <blockquote>
-          "Interiores bem planejados melhoram a rotina, inspiram e acolhem."
-        </blockquote>
-      </div>
-    </section>
+<img src="ImagesDefundo" alt="fundo.jpeg">
 
-    <!-- Seção Serviços -->
-    <section id="servicos" class="services">
-      <span class="tag-dark">NOSSOS SERVIÇOS</span>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Projetos Residenciais</h3>
-          <p>Conforto, funcionalidade e personalidade em cada detalhe.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Bem-vindo!</h1>
+
+        <p>Entre na sua conta</p>
+
+        <form>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="usuario">Digite seu usuario</label>
+            <input type="usuario" id="usuario" placeholder="Digite seu usuario"> 
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <input type="password" id="confirmar-senha" placeholder="Confirme sua senha">
+
+            <a href="#">Esqueceu sua senha?</a>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+        <div class="criar-conta">
+            <p>Ainda não tem uma conta?</p>
+            <a href="#">Criar conta</a>
         </div>
-        <div class="service-card">
-          <h3>Projetos Comerciais</h3>
-          <p>Ambientes que valorizam sua marca e o seu negócio.</p>
-        </div>
-        <div class="service-card">
-          <h3>Projetos de Interiores</h3>
-          <p>Curadoria de móveis, cores e elementos que fazem a diferença.</p>
-        </div>
-        <div class="service-card">
-          <h3>Consultoria de Obra</h3>
-          <p>Do projeto à entrega, com total cuidado e alinhamento.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Seção Projetos (Galeria) -->
-    <section id="projetos" class="projects">
-      <div class="projects-header">
-        <span class="tag-dark">PROJETOS EM DESTAQUE</span>
-        <a href="#" class="view-all">VER TODOS OS PROJETOS &rarr;</a>
-      </div>
-      <div class="projects-gallery">
-        <!-- Caminhos das imagens atualizados aqui -->
-        <img
-          src="projeto-01.png"
-          alt="Sala de estar moderna com painel de madeira e detalhes em verde"
-        />
-        <img
-          src="projeto-02.png"
-          alt="Quarto infantil aconchegante com cama embutida e decoração lúdica"
-        />
-        <img
-          src="projeto-03.png"
-          alt="Quarto de casal sofisticado com painel de madeira e iluminação embutida"
-        />
-        <img
-          src="projeto-04.png"
-          alt="Sala de estar iluminada com móveis claros e poltronas confortáveis"
-        />
-      </div>
-    </section>
+    </div>
 
-    <!-- Rodapé -->
-    <footer id="contato" class="footer">
-      <div class="logo">
-        <h2>BEDIN PASZTETNIK</h2>
-        <span>ARQUITETURA . INTERIORES</span>
-      </div>
-      <div class="social-links">
-        <a href="#">Instagram</a> | <a href="#">Pinterest</a> |
-        <a href="#">LinkedIn</a>
-      </div>
-      <div class="contact-cta">
-        <a href="#">Vamos conversar sobre o seu projeto? &rarr;</a>
-      </div>
-    </footer>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
-<link
-  href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
-  rel="stylesheet"
-/>
+```
