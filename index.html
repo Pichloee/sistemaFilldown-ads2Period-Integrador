@@ -1,55 +1,248 @@
-```html
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedin Pasztetnik - Arquitetura e Interiores</title>
 
-<head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-<img src="ImagesDefundo" alt="fundo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Login</title>
+    <style>
+      .social-links a {
+        color: white;
+        font-size: 18px;
+        margin: 0 12px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .social-links a:hover {
+        opacity: 0.8;
+      }
+      .social-links .instagram:hover {
+        color: #e4405f;
+      }
+      .social-links .whatsapp:hover {
+        color: #25d366;
+      }
+      .social-links i {
+        font-size: 20px;
+      }
 
-    <link rel="stylesheet" href="style.css">
-</head>
+      .navbar .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .navbar .logo-img {
+        height: 38px;
+        width: auto;
+        object-fit: contain;
+      }
 
-<body>
-
-    <div class="login-container">
-
-        <h1>Bem-vindo!</h1>
-
-        <p>Entre na sua conta</p>
-
-        <form>
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
-
-            <label for="usuario">Digite seu usuario</label>
-            <input type="usuario" id="usuario" placeholder="Digite seu usuario"> 
-
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha">
-
-            <label for="confirmar-senha">Confirmar Senha</label>
-            <input type="password" id="confirmar-senha" placeholder="Confirme sua senha">
-
-            <a href="#">Esqueceu sua senha?</a>
-
-            <button type="submit">Entrar</button>
-
-        </form>
-
-        <div class="criar-conta">
-            <p>Ainda não tem uma conta?</p>
-            <a href="#">Criar conta</a>
+      .footer .logo {
+        text-align: center;
+        line-height: 1.4;
+      }
+      .footer .logo h2 {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.08em;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+      }
+      .footer .logo span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="#inicio">
+          <img
+            src="imagens/Logo da Bedin Pasztetnik em PNG .png"
+            alt="Logo Bedin Pasztetnik"
+            class="logo-img"
+          />
+        </a>
+        <div>
+          <h2>BEDIN PASZTETNIK</h2>
+          <span>ARQUITETURA · INTERIORES</span>
         </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    </div>
+    <!-- Seção Principal -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <span class="tag">ARQUITETURA DE INTERIORES</span>
+        <h1>Arquitetura com personalidade e propósito.</h1>
+        <p>
+          Projetamos espaços que vão além da estética: ambientes pensados para
+          acolher, funcionar e refletir a história de quem os vive.
+        </p>
+        <a href="#projetos" class="btn">CONHEÇA NOSSO TRABALHO &rarr;</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="imagens/hero.png"
+          alt="Fachada de casa moderna com varanda de madeira e piscina"
+        />
+      </div>
+    </section>
 
-</body>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+      <div class="about-image">
+        <img
+          src="imagens/sobre.jpg"
+          alt="Retrato de duas arquitetas em um ambiente iluminado"
+        />
+      </div>
+      <div class="about-content">
+        <span class="tag">SOBRE NÓS</span>
+        <h2>Duas visões, um mesmo propósito.</h2>
+        <p>
+          Somos Renata Bedin e Daniela Pasztetnik. Acreditamos que arquitetura é
+          compreender pessoas e transformar suas necessidades, histórias e
+          desejos em espaços que façam sentido. Unimos criatividade, técnica e
+          atenção aos detalhes para criar ambientes que reflitam quem você é e
+          como você vive.
+        </p>
+        <a href="#sobre" class="btn-dark">SAIBA MAIS &rarr;</a>
+      </div>
+      <div class="about-quote">
+        <blockquote>
+          "Interiores bem planejados melhoram a rotina, inspiram e acolhem."
+        </blockquote>
+      </div>
+    </section>
 
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services">
+      <span class="tag-dark">NOSSOS SERVIÇOS</span>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Projetos Arquitetônicos</h3>
+          <p>
+            Da planta baixa à fachada, sua casa planejada para a sua família.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Projetos Comerciais</h3>
+          <p>Ambientes que valorizam a sua marca e o seu negócio.</p>
+        </div>
+        <div class="service-card">
+          <h3>Projetos de Interiores</h3>
+          <p>
+            Do layout aos últimos detalhes, seu ambiente com um olhar
+            profissional.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Projetos Online</h3>
+          <p>
+            Curadoria e desenvolvimento a distância com orientação e
+            detalhamento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projects">
+      <div class="projects-header">
+        <span class="tag-dark">PROJETOS EM DESTAQUE</span>
+        <a href="#" class="view-all">VER TODOS OS PROJETOS &rarr;</a>
+      </div>
+      <div class="projects-gallery">
+        <img
+          src="imagens/projeto-01.png"
+          alt="Sala de estar moderna com painel de madeira e detalhes em verde"
+        />
+        <img
+          src="imagens/projeto-02.png"
+          alt="Quarto infantil aconchegante com cama embutida e decoração lúdica"
+        />
+        <img
+          src="imagens/projeto-03.png"
+          alt="Quarto de casal sofisticado com painel de madeira e iluminação embutida"
+        />
+        <img
+          src="imagens/projeto-04.png"
+          alt="Sala de estar iluminada com móveis claros e poltronas confortáveis"
+        />
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="footer">
+      <div class="logo">
+        <h2>BEDIN PASZTETNIK</h2>
+        <span>ARQUITETURA · INTERIORES</span>
+      </div>
+
+      <div class="contact-cta">
+        <a
+          href="https://api.whatsapp.com/message/T4OGIA56VCMEM1?autoload=1&app_absent=0"
+          target="_blank"
+        >
+          Vamos conversar sobre o seu projeto? &rarr;
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a
+          href="https://api.whatsapp.com/message/T4OGIA56VCMEM1?autoload=1&app_absent=0"
+          class="whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+        </a>
+        <a
+          href="https://www.instagram.com/bedinpasztetnik.arq?dlrf=MTIxZzJhZml3MTEzcw=="
+          class="instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-```
