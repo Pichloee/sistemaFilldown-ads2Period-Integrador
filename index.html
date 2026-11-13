@@ -335,10 +335,10 @@
         const newWin = window.open("", "_blank");
         if (!newWin) return;
 
-        // Constrói a lista de imagens para a nova aba (de 01 a 26)
+        // Constrói a lista de imagens para a nova aba (de 01 a 24)
         let imagesHTML = "";
         const imageFolder = "imagens/";
-        const totalProjects = 26;
+        const totalProjects = 24;
 
         for (let i = 1; i <= totalProjects; i++) {
           const projectNumber = String(i).padStart(2, "0");
